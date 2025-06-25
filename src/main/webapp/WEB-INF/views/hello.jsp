@@ -1,0 +1,1 @@
+<html><body><h1>Hello, Spring Boot with JSP!</h1></body></html>
