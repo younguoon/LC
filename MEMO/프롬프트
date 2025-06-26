@@ -1,0 +1,9 @@
+java 클래스 메소드 생성
+입력값 : 기능명1, 기능명2, 기능설명
+명명규칙.컨트롤러 : 기능명1기능명2Controller
+명명규칙.DTO : 기능설명에 적합한 추천단어 => 추천단어req, 추천단어res
+생성규칙 : 컨트롤러, 메소드, DTO(req, res)
+패키지구조.컨트롤러 : src.main.java.com.lottecard.fgs.admin.app.기능명1.controllor
+패키지구조.DTO : src.main.java.com.lottecard.fgs.admin.app.기능명1.controllor.dto
+
+

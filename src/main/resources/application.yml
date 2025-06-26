@@ -7,10 +7,6 @@ server:
         development: true  # JSP 재컴파일 허용
         
 spring:
-  mvc:
-    view:
-      prefix: /WEB-INF/views/
-      suffix: .jsp
   devtools:
     restart:
       enabled: true

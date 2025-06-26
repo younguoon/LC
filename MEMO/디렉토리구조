@@ -1,0 +1,31 @@
+src/
+└── main/
+    ├── java/
+    │   └── com/lottecard/fgs/
+    │       ├── DemoApplication.java
+    │       └── example/controller/
+    │           ├── HelloController.java
+    │           └── PostApiController.java
+    │
+    ├── resources/
+    │   ├── application.yml
+    │   ├── config/
+    │   └── static/js/
+    │       └── common.js
+    │
+    └── webapp/
+        └── WEB-INF/jsp/
+            ├── hello.jsp
+            ├── postDetail.jsp
+            ├── common/
+            │   ├── common.jsp
+            │   ├── login.jsp
+            │   ├── paging.jsp
+            │   └── popupModal.jsp
+            └── layout/
+                ├── gnb.jsp
+                ├── header.jsp
+                ├── includeFiles.jsp
+                ├── layout.jsp
+                ├── layout_frag.jsp
+                └── lnb.jsp
