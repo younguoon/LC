@@ -17,13 +17,13 @@ public enum ViewPage {
     }
 
     public static String resolve(String uri){
-        if(VIEW_EXCEPTIOONS.containsKey(uri)){
-            return VIEW_EXCEPTIOONS.get(uri);
+        if(VIEW_EXCEPTIONS.containsKey(uri)){
+            return VIEW_EXCEPTIONS.get(uri);
         }
         return "/WEB-INF/jsp" + uri + ".jsp";
     }
 
-    private static final Map<String, String> VIEW_EXCEPTIOONS = Map.of(
+    private static final Map<String, String> VIEW_EXCEPTIONS = Map.of(
         "/main", "/WEB-INF/jsp/common/main.jsp",
         "/lognin", "/WEB-INF/jsp/common/login.jsp"
     );

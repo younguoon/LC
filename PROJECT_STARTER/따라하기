@@ -1,0 +1,8 @@
+1. java17 설치
+
+1. VS Code 터미널 (Ctrl + ~) 열고: 둘 중 하나 실행(프로젝트 루트경로로 가야함)
+    ./gradlew build 
+    ./gradlew bootRun
+
+2.  Spring 서버가 정상 실행되면 브라우저에서 확인:
+    http://localhost:8080/post/detail
