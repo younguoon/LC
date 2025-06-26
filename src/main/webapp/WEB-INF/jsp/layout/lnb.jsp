@@ -1,6 +1,8 @@
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+
 <div class="sidebar sidebar-dark sidebar-fixed" id="sidebar">
     <div class="sidebar-brand">
-      <strong>MyAdmin</strong>
+        CHECK IN SEOUL
     </div>
     <ul class="sidebar-nav" data-coreui="navigation" data-simplebar>
       <li class="nav-item">

@@ -24,6 +24,6 @@
     <link rel="stylesheet" href="/css/jquery/jquery-ui.min.css">
     <link rel="stylesheet" href="/css/jquery/jquery-ui.structure.min.css">
     <link rel="stylesheet" href="/css/jquery/jquery-ui.theme.min.css">
-    <link rel="stylesheet" href="/css/jquery/layout.css">
-    <link rel="stylesheet" href="/css/jquery/style.css">
+    <link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" href="/css/style.css">
 </haed>

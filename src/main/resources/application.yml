@@ -5,6 +5,8 @@ server:
     jsp:
       init-parameters:
         development: true  # JSP 재컴파일 허용
+  tomcat:
+    uri-encoding: UTF-8
 
 spring:
   mvc:
