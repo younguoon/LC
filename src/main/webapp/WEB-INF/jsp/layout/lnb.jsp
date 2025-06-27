@@ -16,6 +16,12 @@
           <i class="nav-icon cil-list"></i> 게시글 목록
         </a>
       </li>
+      <li class="nav-title">메뉴 관리</li>
+      <li class="nav-item">
+        <a class="nav-link" href="/men/MENRGH001L1V">
+          <i class="nav-icon cil-list"></i> 관리자 권한 관리
+        </a>
+      </li>
     </ul>
   </div>
   

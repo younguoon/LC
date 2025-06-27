@@ -9,7 +9,7 @@ import com.lottecard.fgs.global.config.view.LayoutType;
 @Controller
 public class HelloController {
 
-    @GetMapping("/hello")
+    @GetMapping("/main")
     public String hello() {System.err.println();
         return LayoutType.MAIN.path(); // /WEB-INF/views/hello.jsp
     }

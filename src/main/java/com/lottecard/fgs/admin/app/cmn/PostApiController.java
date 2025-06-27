@@ -10,6 +10,12 @@ import java.util.List;
 @Controller
 public class PostApiController {
 
+    @GetMapping("/post/list")
+    public String postList() {
+        // return "postDetail";
+        return LayoutType.MAIN.path();
+    }
+
     @GetMapping("/post/detail")
     public String postDetail() {
         // return "postDetail";
