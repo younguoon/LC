@@ -3,6 +3,7 @@ package com.lottecard.fgs.global.config;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
+import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 import com.lottecard.fgs.global.interceptor.ResourceInterceptor;
@@ -28,10 +29,17 @@ public class WebConfig implements WebMvcConfigurer {
     };
 
     @Override
+    public void addViewControllers(ViewControllerRegistry registry) {
+        // 루트 경로를 /login으로 리다이렉트
+        registry.addRedirectViewController("/", "/login");
+    }
+
+    
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
-        registry.addResourceHandler("/static/**")
-                .addResourceLocations("/static/")
-                .setCachePeriod(300);
+        registry.addResourceHandler("/css/**")
+                .addResourceLocations("classpath:/static/css/", "/css/");
+        registry.addResourceHandler("/js/**")
+                .addResourceLocations("classpath:/static/js/", "/js/");
     }
 
     /**

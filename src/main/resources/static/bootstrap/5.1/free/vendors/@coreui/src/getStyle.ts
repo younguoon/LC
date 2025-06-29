@@ -1,0 +1,1 @@
+No Content: https://coreui.io/demos/bootstrap/5.1/free/vendors/@coreui/src/getStyle.ts

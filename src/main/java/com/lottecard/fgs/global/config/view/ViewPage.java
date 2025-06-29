@@ -1,10 +1,11 @@
 package com.lottecard.fgs.global.config.view;
 
-import java.util.Map;
-
 public enum ViewPage {
-    LOGIN("/WEB-INF/jsp/common/login.jsp"),
-    HOME("/WEB-INF/jsp/common/main.jsp");
+    
+    // 특별한 경우만 정의 (대부분은 자동 매핑 사용)
+    LOGIN("/WEB-INF/jsp/login.jsp"),
+    HOME("/WEB-INF/jsp/main.jsp"),
+    ERROR("/WEB-INF/jsp/error.jsp");
 
     private final String path;
 
@@ -16,16 +17,24 @@ public enum ViewPage {
         return path;
     }
 
-    public static String resolve(String uri){
-        if(VIEW_EXCEPTIONS.containsKey(uri)){
-            return VIEW_EXCEPTIONS.get(uri);
+    /**
+     * URI를 JSP 경로로 자동 변환
+     * 예: /admin/dashboard -> /WEB-INF/jsp/admin/dashboard.jsp
+     */
+    public static String resolve(String uri) {
+        // 루트 경로는 로그인으로
+        if ("/".equals(uri)) {
+            return LOGIN.path();
         }
-        return "/WEB-INF/jsp" + uri + ".jsp";
+        
+        // 첫 번째 슬래시 제거 후 JSP 경로 생성
+        String cleanUri = uri.startsWith("/") ? uri.substring(1) : uri;
+        
+        // 빈 경로면 login
+        if (cleanUri.isEmpty()) {
+            return LOGIN.path();
+        }
+        
+        return "/WEB-INF/jsp/" + cleanUri + ".jsp";
     }
-
-    private static final Map<String, String> VIEW_EXCEPTIONS = Map.of(
-        "/main", "/WEB-INF/jsp/common/main.jsp",
-        "/lognin", "/WEB-INF/jsp/common/login.jsp"
-    );
-
 }

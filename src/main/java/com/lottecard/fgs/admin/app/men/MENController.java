@@ -1,4 +1,4 @@
-package com.lottecard.fgs.admin.app.cmn;
+package com.lottecard.fgs.admin.app.men;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
@@ -8,7 +8,7 @@ import com.lottecard.fgs.global.config.view.LayoutType;
 import java.util.List;
 
 @Controller
-@RequestMapping(path="/men/")
+@RequestMapping(path = "/men/")
 public class MENController {
 
     @GetMapping("MENRGH001L1V")
